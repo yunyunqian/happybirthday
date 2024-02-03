@@ -1,0 +1,64 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.message,
+.question,
+.answer {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.noButton {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.answer {
+  text-align: center;
+  padding: 40px; /* Increase padding for more space */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.answer img {
+  width: 100%; /* Make the images fill their container */
+  max-height: 400px; /* Adjust the maximum height as needed */
+  object-fit: contain; /* Maintain the aspect ratio of the images */
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.image-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.image-buttons button:hover {
+  background-color: #3f3f3f2d; /* Darker red on hover */
+}
