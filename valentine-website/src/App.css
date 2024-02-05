@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/message_bg.jpg'); /* Set the background image path */
+  background-size: cover; /* Cover the entire viewport with the background image */
+  background-position: center; /* Center the background image */
+  font-family: 'Arial', sans-serif; /* Add a fallback font family */
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,8 +15,47 @@
   height: 100vh;
 }
 
-.message,
-.question,
+.message {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.message button {
+  font-size: 18px; /* Increase the font size for the button text */
+  padding: 20px; /* Increase padding for a larger button */
+  margin-top: 10px;
+  background-color: #ff0000; /* Red background color for buttons */
+  color: #ffffff; /* White text color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.question {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  width: 75%;
+  font-size: 30px;
+}
+
 .answer {
   text-align: center;
   padding: 20px;
@@ -28,8 +76,48 @@
   padding: 40px; /* Increase padding for more space */
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
+}
+
+.question,
+.answer {
+  text-align: center;
+  padding: 40px; /* Increase padding for more space */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better readability */
+  margin-bottom: 20px;
+}
+
+.question button.yesButton {
+  font-size: 18px; /* Increase the font size for the button text */
+  padding: 20px; /* Increase padding for a larger button */
+  margin: 10px; /* Add margin for spacing between buttons */
+  background-color: #ff0000; /* Red background color for buttons */
+  color: #ffffff; /* White text color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question button:hover.yesButton {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.question button.noButton {
+  font-size: 18px; /* Increase the font size for the button text */
+  padding: 20px; /* Increase padding for a larger button */
+  margin: 10px; /* Add margin for spacing between buttons */
+  background-color: #ccc !important; /* Grey background color for the disabled button */
+  color: #fff; /* White text color for the disabled button */
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed; /* Disable cursor for the disabled button */
+}
+
+.question button.noButton:hover {
+  background-color: #ccc !important; /* Keep the same grey color on hover */
 }
 
 .answer img {
@@ -60,5 +148,5 @@
 }
 
 .image-buttons button:hover {
-  background-color: #3f3f3f2d; /* Darker red on hover */
+  background-color: #cc0000; /* Darker red on hover */
 }

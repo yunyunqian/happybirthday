@@ -38,16 +38,18 @@ const App = () => {
     <div className="App">
       {showMessage && (
         <div className="message">
-          <p>Thank you for making me happy</p>
+          <p className='name'>Yvonne Tsui, </p> 
+          <p>You make my life so eventful and filled with joy. Spending time with you is never a dull moment. I appreciate how your ADHD always keeps me on my toes, along with your cheeky comments. You're one of the kindest and most considerate people I know. I'm thankful for how you always feed me and ensure that I'm always hydrated. You are a beautiful and intelligent woman. Thank you for being such a wonderful person and bringing joy into my life.</p>
+          <p>- Kai Nguyen</p>
           <button onClick={handleNext}>Next</button>
         </div>
       )}
       {showQuestion && (
         <div className="question">
-          <p>Will you be my Valentine?</p>
+          <p>Will you be MY Valentine? 😊</p>
           <div>
-            <button onClick={() => handleAnswer('Yes')}>Yes</button>
-            <button className="noButton" disabled>
+            <button className="yesButton" onClick={() => handleAnswer('Yes')}>Yes</button>
+            <button className="noButton">
               No
             </button>
           </div>
