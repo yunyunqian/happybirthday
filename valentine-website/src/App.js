@@ -57,7 +57,7 @@ const App = () => {
       )}
       {showAnswer && (
         <div className="answer">
-          <p>See you on Feb 14 ❤️</p>
+          <p>See you on Feb 14, 2024 ❤️</p>
           <div className="image-container">
             <img src={images[currentIndex]} alt={`Wilde ${currentIndex + 1}`} />
             <div className="image-buttons">
