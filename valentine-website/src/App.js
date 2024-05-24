@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 import wilde_1 from './images/wilde_1.jpg';
-import wilde_2 from './images/wilde_2.jpg';
-import wilde_3 from './images/wilde_3.jpg';
-import wilde_4 from './images/wilde_4.jpg';
 
 const App = () => {
   const [showMessage, setShowMessage] = useState(true);
@@ -38,15 +35,15 @@ const App = () => {
     <div className="App">
       {showMessage && (
         <div className="message">
-          <p className='name'>Yvonne Tsui, </p> 
-          <p>You make my life so eventful and filled with joy. Spending time with you is never a dull moment. I appreciate how your ADHD always keeps me on my toes, along with your cheeky comments. You're one of the kindest and most considerate people I know. I'm thankful for how you always feed me and ensure that I'm always hydrated. You are a beautiful and intelligent woman. Thank you for being such a wonderful person and bringing joy into my life.</p>
-          <p>- Kai Nguyen</p>
+          <p className='name'>Nicholas Kokorudz, </p> 
+          <p>You make my life so eventful and filled with joy. Spending time with you is never a dull moment. I appreciate how you can always find the 80s music for the moment with your cheeky comments. You're one of the kindest and most considerate people I know. I'm thankful that your family is always being so nice to me. Thank you for being such a wonderful person and bringing joy into my life.</p>
+          <p>- Chen Qian</p>
           <button onClick={handleNext}>Next</button>
         </div>
       )}
       {showQuestion && (
         <div className="question">
-          <p>Will you be MY Valentine? 😊</p>
+          <p>Ready for your birthday gift? 😊</p>
           <div>
             <button className="yesButton" onClick={() => handleAnswer('Yes')}>Yes</button>
             <button className="noButton">
@@ -57,7 +54,7 @@ const App = () => {
       )}
       {showAnswer && (
         <div className="answer">
-          <p>See you on Feb 14, 2024 ❤️</p>
+          <p>See you on June 2, 2024 ❤️</p>
           <div className="image-container">
             <img src={images[currentIndex]} alt={`Wilde ${currentIndex + 1}`} />
             <div className="image-buttons">
